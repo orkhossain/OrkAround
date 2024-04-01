@@ -1,40 +1,34 @@
 <script setup>
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Tech-Focused Solutions",
     description:
-      "Build your site using Vue, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Explore innovative tech solutions to address environmental challenges.",
+    icon: "bx:bxs-desktop",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Sustainable Practices",
     description:
-      "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+      "Learn about sustainable practices and how they contribute to a healthier planet.",
     icon: "bx:bxs-window-alt",
   },
   {
-    title: "On-Demand Components",
+    title: "Waste Reduction Strategies",
     description:
-      "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
+      "Discover effective strategies to reduce waste and minimize environmental impact.",
     icon: "bx:bxs-data",
   },
   {
-    title: "Broad Integration",
+    title: "Minimalism",
     description:
-      "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+      "Embrace a lifestyle focused on simplicity and intentional living, reducing clutter and consumption.",
     icon: "bx:bxs-bot",
   },
   {
-    title: "SEO Enabled",
+    title: "Zero Waste Lifestyle",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Adopt practices to minimize waste generation and promote recycling, composting, and reusability.",
+    icon: "bx:bxs-bot",
   },
 ];
 </script>
@@ -42,11 +36,11 @@ const features = [
 <template>
   <div class="mt-16 md:mt-0">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Everything you need to start a website
+      Empowering Change for a Sustainable Future
     </h2>
     <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
+      Explore how technology and mindful living can create a positive impact on
+      the environment and society.
     </p>
   </div>
 

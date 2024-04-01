@@ -8,5 +8,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["nuxt-icon"],
+  modules: ["nuxt-icon", "@nuxtjs/i18n", "@hypernym/nuxt-gsap"],
+  i18n: {
+    vueI18n: "./i18n.config.ts", // if you are using custom path, default
+  },
 });

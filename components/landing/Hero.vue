@@ -3,7 +3,7 @@
     <div class="p-24 md:order-1 hidden md:block">
       <img
         class="rounded-full transition-transform transform hover:scale-125"
-        src="~/assets/img/hero.jpg"
+        src="~/assets/img/pp1.webp"
         alt="Starship starts the engine"
         loading="eager"
         format="avif"
@@ -14,19 +14,27 @@
 
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
-        Marketing website done with Nuxt
+        Exploring Tech, Creativity, and Sustainability
       </h1>
+      <h2
+        class="text-3xl lg:text-4xl xl:text-5xl font-semibold lg:tracking-tight text-gray-700 mt-4"
+      >
+        Hi! I'm Ork
+      </h2>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        Nuxtship is a starter template for startups, marketing websites &
-        landing pages.<wbr /> Built with Nuxt & TailwindCSS. You can quickly
-        create any website with this starter.
+        I'm a software engineer with a love for the environment, technology,
+        languages, and the arts. Through this blog, I share my passions and
+        work, from coding to capturing moments behind the camera. Join me as I
+        explore the intersections of tech, photography, and sustainability, and
+        let's embark on this journey together.
       </p>
+
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
           href="https://github.com/Gr33nW33n/nuxtship-template"
           target="_blank"
           rel="noopener"
-          >Get Started</LandingLink
+          >Contact Me</LandingLink
         >
         <LandingLink
           size="lg"
@@ -34,7 +42,7 @@
           rel="noopener"
           href="https://github.com/Gr33nW33n/nuxtship-template"
           target="_blank"
-          >View Repo</LandingLink
+          >About me</LandingLink
         >
       </div>
     </div>

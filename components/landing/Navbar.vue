@@ -1,17 +1,27 @@
 <script setup>
-const menuitems = [
+const menuitems1 = [
+  // {
+  //   title: "Home",
+  //   path: "#",
+  // },
   {
-    title: "Features",
-    path: "#",
+    title: "Technology",
+    path: "/technology",
   },
   {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
+    title: "Sustainability",
     path: "/about",
   },
+];
+const menuitems2 = [
+  {
+    title: "Services",
+    path: "/services",
+  },
+  // {
+  //   title: "About",
+  //   path: "/about",
+  // },
   {
     title: "Contact",
     path: "/contact",
@@ -25,9 +35,10 @@ const open = ref(false);
   <LandingContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Nuxt</span
-          ><span class="text-slate-500">ship</span>
+        <a href="/" class="text-lg">
+          <span class="f text-slate-500">W</span>
+          <span class="font-bold text-slate-800">Ork</span>
+          <span class="text-slate-500">Around</span>
         </a>
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
@@ -58,28 +69,34 @@ const open = ref(false);
         :class="{ block: open, hidden: !open }"
       >
         <ul class="flex flex-col lg:flex-row lg:gap-3">
-          <li v-for="item of menuitems">
+          <li v-for="(item, index) of menuitems1" :key="index">
             <a
               :href="item.path"
               class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+              :class="{ 'lg:justify-center': index < 3 }"
             >
               {{ item.title }}
             </a>
           </li>
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" styleName="muted" block size="md"
-            >Log in</LandingLink
-          >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
-        </div>
       </nav>
-      <div>
-        <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
-        </div>
-      </div>
+
+      <nav
+        class="w-full lg:w-auto mt-2 lg:flex lg:mt-0"
+        :class="{ block: open, hidden: !open }"
+      >
+        <ul class="flex flex-col lg:flex-row lg:gap-3">
+          <li v-for="(item, index) of menuitems2" :key="index">
+            <a
+              :href="item.path"
+              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+              :class="{ 'lg:justify-center': index < 3 }"
+            >
+              {{ item.title }}
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   </LandingContainer>
 </template>
